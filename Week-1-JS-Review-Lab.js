@@ -522,13 +522,14 @@ console.log(realtorFees(6));
  * Task-5: Sort the listing array ascendingly in a new variable called listingAscendingly
  */
 //WRITE YOUR CODE BELOW
-const listingAscendingly =[];
-for (let i = 0; i < listings.length; i++){
-  ling
-}
+const listingAscendingly = listings.sort((a, b) => a.price - b.price);
+console.log(listingAscendingly);
+  
+
 /**
  * Task-6: filter all the listings by bulitIn propertity for all houses built on or after 1990.
  * Name the variable newBuiltListings
  */
-
 //WRITE YOUR CODE BELOW
+const newBuiltListings = listings.filter((listing) => (listing.builtIn = 1990 || listing.builtIn > 1990))
+console.log(newBuiltListings);
